@@ -201,8 +201,9 @@ if __name__ == '__main__':
             print("Train Set Accuracy : ",train_acc,"\tTest Set Accuracy : ",test_acc)
     
     # plot
-    line = plt.plot(range(len(train_acc_list)),train_acc_list)
-    plt.setp(line,color='r', linewidth=1.0)
+    trian_plot = plt.plot(range(len(train_acc_list)),train_acc_list)
+    test_plot = plt.plot(range(len(train_acc_list)),train_acc_list)
+    plt.setp(trian_plot,color='r', linewidth=1.0)
     plt.xlabel('epoch')
     plt.ylabel('Accuracy')
     plt.show()
