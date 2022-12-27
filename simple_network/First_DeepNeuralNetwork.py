@@ -168,7 +168,7 @@ if __name__ == '__main__':
     
     # batch 나눠서 진행
     iteration_num=30000
-    batch_size=100
+    batch_size=10
     learning_rate=0.01
     
     train_loss_list=[]

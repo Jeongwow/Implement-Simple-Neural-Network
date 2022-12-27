@@ -93,25 +93,28 @@ import matplotlib.pyplot as plt
 # plt.show()
 
 
-d = {}
+
+
+# Orderdict() 사용 이유
+# d = {}
  
-d['z'] = 300
+# d['z'] = 300
  
-d['y'] = 200
+# d['y'] = 200
  
-d['x'] = 100
+# d['x'] = 100
  
-v = {}
+# v = {}
  
-v['y'] = 200
+# v['y'] = 200
  
-v['x'] = 100
+# v['x'] = 100
  
-v['z'] = 300
+# v['z'] = 300
  
-print(d)
+# print(d)
  
-print(v)
+# print(v)
  
-if d == v :
-    print(" Dictionary가 동일")
+# if d == v :
+#     print(" Dictionary가 동일")
