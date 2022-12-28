@@ -1,6 +1,9 @@
 import numpy as np
 import random
 import matplotlib.pyplot as plt
+import csv
+from collections import OrderedDict
+
 
 # def init_xt():
 #     input_data=np.empty((0,3))
@@ -38,11 +41,14 @@ import matplotlib.pyplot as plt
 
 
 
-# weight_init_std=0.01
-# params={}
-# params['W1']=weight_init_std*np.random.randn(3,4)
-# params['W2']=weight_init_std*np.random.randn(4,4)
-# params['W3']=weight_init_std*np.random.randn(4,3)
+weight_init_std=0.01
+params=OrderedDict()
+params['W1']=weight_init_std*np.random.randn(3,4)
+params['B1']=np.zeros(4)
+params['W2']=weight_init_std*np.random.randn(4,4)
+params['B2']=np.zeros(4)
+params['W3']=weight_init_std*np.random.randn(4,3)
+params['B3']=np.zeros(3)
 
 # print(params)
 
@@ -118,3 +124,19 @@ import matplotlib.pyplot as plt
  
 # if d == v :
 #     print(" Dictionary가 동일")
+
+
+
+# print(params)
+
+
+        
+# 변수 파일 저장
+# np.savez("simple_network/Data/file.npz", **params)
+
+# 변수 불러오기
+# my_dictionary = np.load("simple_network/Data/file.npz", allow_pickle=True)
+# paaa=dict(my_dictionary)
+# print(paaa)
+
+    

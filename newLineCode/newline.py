@@ -1,6 +1,6 @@
-textFile=open("MIT_DL_ch2.txt")
+textFile=open("newLineCode/ch2.txt")
 
-targetFile="MIT_DL_ch2_p.txt"
+targetFile="newLineCode/MIT_DL_ch2_p.txt"
 
 result=open(targetFile,"w")
 targetFile_contents = textFile.read()

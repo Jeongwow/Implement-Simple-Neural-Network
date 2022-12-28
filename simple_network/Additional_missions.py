@@ -4,15 +4,16 @@ from collections import OrderedDict
 import matplotlib.pyplot as plt
 
 class Simple_Neural_Network:
-    def __init__(self,weight_init_std=0.01):
+    def __init__(self,params,weight_init_std=0.01):
         # 0.01을 곱해주는 이유: w초기값이크면 gradient vanishing 문제가 발생함.
-        self.params={}
-        self.params['W1']=weight_init_std*np.random.randn(3,4)
-        self.params['B1']=np.zeros(4)
-        self.params['W2']=weight_init_std*np.random.randn(4,4)
-        self.params['B2']=np.zeros(4)
-        self.params['W3']=weight_init_std*np.random.randn(4,3)
-        self.params['B3']=np.zeros(3)
+        # self.params={}
+        # self.params['W1']=weight_init_std*np.random.randn(3,4)
+        # self.params['B1']=np.zeros(4)
+        # self.params['W2']=weight_init_std*np.random.randn(4,4)
+        # self.params['B2']=np.zeros(4)
+        # self.params['W3']=weight_init_std*np.random.randn(4,3)
+        # self.params['B3']=np.zeros(3)
+        self.params=params
         
         # OrderedDict사용 이유: python의 일반적인 Dictionary는 key,Value 쌍이 추가되는 순서를 기억하지 않음. 
         # 순서가 달라도 같은 key,value값이 있으면 같다고 판단함
@@ -159,13 +160,16 @@ def cross_entropy_error(t,y):
 if __name__ == '__main__':
     XYZ,t=init_xt() #데이터, 정답 초기화
     
+    my_dictionary = np.load("simple_network/Data/file.npz", allow_pickle=True)
+    params=dict(my_dictionary)
+    
     xyz_train_set=XYZ[0:1000,:]
     t_train_set=t[0:1000,:]
     
     xyz_test_set=XYZ[1000:1100,:]
     t_test_set=t[1000:1100,:]
 
-    network=Simple_Neural_Network()
+    network=Simple_Neural_Network(params)
     
     # batch 나눠서 진행
     iteration_num=30000
