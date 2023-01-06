@@ -5,21 +5,21 @@ import csv
 from collections import OrderedDict
 
 
-# def init_xt():
-#     input_data=np.empty((0,3))
-#     t=np.empty((0,3))
-#     for i in range(500):
-#         input_data=np.append(input_data, np.array([[random.randrange(0,300) for j in range(3)]]),axis=0)
-#         x=input_data[-1,0]
-#         if x<100:
-#             t=np.append(t,np.array([[1, 0, 0]]),axis=0)
-#         elif x<200:
-#             t=np.append(t,np.array([[0, 1, 0]]),axis=0)
-#         elif x<300:
-#             t=np.append(t,np.array([[0, 0, 1]]),axis=0)
-#         # print(x)
+def init_xt():
+    input_data=np.empty((0,3))
+    t=np.empty((0,3))
+    for i in range(500):
+        input_data=np.append(input_data, np.array([[random.randrange(0,300) for j in range(3)]]),axis=0)
+        x=input_data[-1,0]
+        if x<100:
+            t=np.append(t,np.array([[1, 0, 0]]),axis=0)
+        elif x<200:
+            t=np.append(t,np.array([[0, 1, 0]]),axis=0)
+        elif x<300:
+            t=np.append(t,np.array([[0, 0, 1]]),axis=0)
+        # print(x)
 
-#     return input_data,t
+    return input_data,t
 
 # def init_W(): # 나중에 파일에 w값 저장해놓자.
 #     W1=np.empty((0,4))
@@ -139,4 +139,18 @@ params['B3']=np.zeros(3)
 # paaa=dict(my_dictionary)
 # print(paaa)
 
+arr=np.random.randn(1000,3)
+
+print(arr)
+
+batch_size=50
+mask_st=0
+for i in range(30):
+    if mask_st+batch_size<arr.shape[0]:
+        mask_st=mask_st+batch_size
+    else:
+        mask_st=0
     
+    mask=arr[mask_st:mask_st+batch_size]
+    print(mask.shape[0])
+    print(mask_st)
