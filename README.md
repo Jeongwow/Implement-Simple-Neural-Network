@@ -1,3 +1,5 @@
+##인천대학교 임베디드시스템공학과 학부 RA 활동 보고서
+
 # Implement-Simple-Neural-Network
 
 간단한 Neural Network모델을 구현.
