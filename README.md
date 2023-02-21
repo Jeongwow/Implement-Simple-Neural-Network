@@ -12,20 +12,23 @@
 1	Neural Network 모델 개발 과정 및 문제점 분석.
 1.1	문제 및 모델 
 <img width="330" alt="image" src="https://user-images.githubusercontent.com/26295029/220339730-6d3c1632-447a-417e-a4c6-cb79cc0fdc45.png">
-		   	사진 14. 문제 및 모델 설명
+
+사진 14. 문제 및 모델 설명
 
 간단한 문제를 해결할 수 있는 Neural Network 모델을 만들어 보라는 과제를 받아 진행함. 
 (손으로 먼저 진행 과정을 정리해보고 코드화하기)
 
 <img width="163" alt="image" src="https://user-images.githubusercontent.com/26295029/220339808-d511c184-e09d-4ac6-93d1-6ac79f7c2970.png">
-		  사진 15. 모델 구현 전 진행 과정 정리
+
+사진 15. 모델 구현 전 진행 과정 정리
 
 1.2	위 문제를 해결하는 Neural Network 모델 개발.  22.12.26~22.12.28
 
 이전에 공부한 지식을 바탕으로 간단한 Neural Network 모델 구현했음.
 초기 모델의 정확도 73%에서 수렴하였음.
 <img width="340" alt="image" src="https://user-images.githubusercontent.com/26295029/220339880-6c5b38a3-e9f7-4a8a-89f9-2d01c50b3218.png">
-		사진 16. 최초 모델 구현 성공 후 결과 확인
+
+사진 16. 최초 모델 구현 성공 후 결과 확인
 
 이전에 공부한 딥러닝 지식들을 바탕으로 직접 간단한 Neural Network 모델을 구현하는 과정을 진행함. 아무 자료 없이 혼자의 힘으로 구현하는 것이 목표였지만 학습 모델을 직접 구현하는 것이 처음이었기 때문에 다소 어려움을 겪음.
 
@@ -80,14 +83,16 @@ Hyper Parameter 및 가중치 초기화 등을 조정하여 정확도 및 Loss �
 교수님과 함께 직접 구현한 Simple Neural Network에 대해 세미나를 진행하였음. 모델은 앞서 설명했듯 이전에 공부한 딥러닝 지식들을 토대로 간단한 모델을 구현하였음. 문제 설명 사진 14 참고.
 
 <img width="345" alt="image" src="https://user-images.githubusercontent.com/26295029/220339958-92b7e80e-3b48-4649-acaa-a04825c1c8f5.png">
-		사진 17. Neural Network 모델의 Architecture
-			 Computational Graph로 표현
+
+사진 17. Neural Network 모델의 Architecture Computational Graph로 표현
 
 <img width="337" alt="image" src="https://user-images.githubusercontent.com/26295029/220339985-7904aca1-a2ec-4a5a-aa1e-4d6f78310a95.png">
-		    사진 18. 입력 데이터 초기화 분포
+
+사진 18. 입력 데이터 초기화 분포
 
 <img width="325" alt="image" src="https://user-images.githubusercontent.com/26295029/220340022-78cf4a7b-87bb-4182-affc-dacaf72b035d.png">
-		사진 19. 모델의 Accuracy, Loss 결과 그래프
+
+사진 19. 모델의 Accuracy, Loss 결과 그래프
 
 위와 같은 문제를 해결하는 Neural Network 모델을 구현하였음. 모델에 대한 설명은 세미나 발표 자료로 대체함. 모델의 정확도(정규화 진행 전)는 대략 73%에서 수렴하는 것을 확인 하였고 주어진 추가 연구 사항들에 대한 분석과 함께 세미나를 진행함.
 
@@ -102,16 +107,19 @@ Hyper Parameter 및 가중치 초기화 등을 조정하여 정확도 및 Loss �
 
 
 <img width="323" alt="image" src="https://user-images.githubusercontent.com/26295029/220340070-c50ac660-a11d-45e4-b844-7f326dff5c3b.png">
-	   사진 20. 가중치 초기화 방식에 따라 달리지는 결과 분석
+
+사진 20. 가중치 초기화 방식에 따라 달리지는 결과 분석
 
 - 정규화 적용 전의 예측 결과와 정규화 후 예측 결과를 Matlab의 Scratter3를 통해 시각화하여 비교함.
 
 <정규화 전/후 결과 비교>
 <img width="376" alt="image" src="https://user-images.githubusercontent.com/26295029/220340112-8edd983d-fc4b-40b6-9c2d-f872cdfceafb.png">
-			사진 21. 정규화 전 결과 분포
+
+사진 21. 정규화 전 결과 분포
 
  <img width="355" alt="image" src="https://user-images.githubusercontent.com/26295029/220340130-0f18aaed-0da0-4844-81a8-c3740764d6ce.png">
-		      사진 22. 정규화 후 결과 분포
+ 
+사진 22. 정규화 후 결과 분포
 
 - 다음 정규화 전 파란색의 점에 대한 예측이 부정확한 이유에 대해 분석하여 발표함.
 ![image](https://user-images.githubusercontent.com/26295029/220339488-6e9f923b-7fb8-4b1a-85d4-5a5725e715fc.png)
