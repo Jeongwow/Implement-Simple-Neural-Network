@@ -11,14 +11,14 @@
 <본문>
 1	Neural Network 모델 개발 과정 및 문제점 분석.
 1.1	문제 및 모델 
-<img width="330" alt="image" src="https://user-images.githubusercontent.com/26295029/220339730-6d3c1632-447a-417e-a4c6-cb79cc0fdc45.png">
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/26295029/220339730-6d3c1632-447a-417e-a4c6-cb79cc0fdc45.png">
 
 사진 14. 문제 및 모델 설명
 
 간단한 문제를 해결할 수 있는 Neural Network 모델을 만들어 보라는 과제를 받아 진행함. 
 (손으로 먼저 진행 과정을 정리해보고 코드화하기)
 
-<img width="163" alt="image" src="https://user-images.githubusercontent.com/26295029/220339808-d511c184-e09d-4ac6-93d1-6ac79f7c2970.png">
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/26295029/220339808-d511c184-e09d-4ac6-93d1-6ac79f7c2970.png">
 
 사진 15. 모델 구현 전 진행 과정 정리
 
@@ -122,4 +122,3 @@ Hyper Parameter 및 가중치 초기화 등을 조정하여 정확도 및 Loss �
 사진 22. 정규화 후 결과 분포
 
 - 다음 정규화 전 파란색의 점에 대한 예측이 부정확한 이유에 대해 분석하여 발표함.
-![image](https://user-images.githubusercontent.com/26295029/220339488-6e9f923b-7fb8-4b1a-85d4-5a5725e715fc.png)
